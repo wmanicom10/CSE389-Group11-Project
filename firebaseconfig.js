@@ -1,3 +1,6 @@
+import {initializeApp} from "firebase/app";
+import {getDatabase, ref} from "firebase/database";
+
 const firebaseConfig = {
     apiKey: "AIzaSyAvXVpgWEhHUTUb48u-2rfyR0DnSbHKYr8",
     authDomain: "java-web-server-314cc.firebaseapp.com",
