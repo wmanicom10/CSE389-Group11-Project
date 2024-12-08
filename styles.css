@@ -1,16 +1,17 @@
 body {
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    height: 100vh;
 }
 
-.button-style {
-    background-color: aquamarine;
-    box-sizing: border-box;
-    color: bisque;
+#welcome-message {
+    text-align: center;
+    position: relative;
+    font-size: 28px;
+    margin: 10px auto 0;
+}
+
+#authenticate {
+    margin: 10px 0;
 }
 
 .align {
@@ -21,29 +22,8 @@ body {
     width: 260px;
 }
 
-
 .container {
     display: flex;
     justify-content: center ;
     align-items: center;
-}
-
-.container2 {
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.welcome-message {
-    font-size: 18px;
-    position: relative;
-    top: 25%;
-} 
-
-.container3 {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Align items to the top */
-    height: 100%; /* Full height */
-    width: 100%; /* Full width */
 }

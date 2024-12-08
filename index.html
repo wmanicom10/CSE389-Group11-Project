@@ -3,38 +3,32 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Login</title>
     <link href="styles.css" rel="stylesheet" >
-
   </head>
   <body>
-    <div class = 'container3'>
-    <div class = 'welcome-message'>
-      <b>
-      Welcome
-      </b>
-    </div>
-  </div>
-    <form action = 'authenticate.php' method="post">
-    <div class = 'container'>
-    <label for="username" class = "align">
-        Username:  
-        <input type="text" id = "username" name = "username" required /><br>
-    </label>
-  </div>
-  <div class = 'container'>
-    <label for="password" class = 'align'>
-        Password: 
-        <input type="password" id="password" name="password" required/><br>
-    </label>
-  </div>
-  <div class = 'container'>
-
-      <input type="submit" value = "Send" />
-    </form>
+    <h2 id="welcome-message"><b>Welcome</b></h2>
+    <form action = 'authenticate.php' method="post" id="authenticate">
+      <div class = 'container'>
+        <label for="username" class = "align">
+            Username:
+            <input type="text" id = "username" name = "username" required /><br>
+        </label>
       </div>
+
+      <div class = 'container'>
+        <label for="password" class = 'align'>
+            Password:
+            <input type="password" id="password" name="password" required/><br>
+        </label>
+      </div>
+
+      <div class = 'container'>
+        <input type="submit" value = "Submit" />
+      </div>
+    </form>
     <div class = 'container'>
-    <a href="/CSE389_FinalProject/adminInterface.html">Admin Login</a>
+      <a href="adminInterface.html">Admin Login</a>
     </div>
   </body>
 </html>
