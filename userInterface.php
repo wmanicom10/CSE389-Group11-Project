@@ -35,8 +35,16 @@
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if(isset($_POST['add'])) {
-                $delUser = $database->getReference('Users')->getChild($uName)->getChild('To Do')->
-                getChild($_POST['TDList'])->set("");
+
+                if (strpos($_POST['TDList'], " ") === false) { 
+                    $delUser = $database->getReference('Users')->getChild($uName)->getChild('To Do')->
+                    getChild($_POST['TDList'])->set("");
+                } else {
+                    $splitString = explode(" ", $_POST['TDList']);
+                    $splitString2 = implode("-", $splitString);
+                    $delUser = $database->getReference('Users')->getChild($uName)->getChild('To Do')->
+                    getChild($splitString2)->set("");
+                }
             
         }
 
